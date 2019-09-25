@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 import "./index.css";
 import axios from "axios";
 import Photos from "./components/Photos";
+import Home from "./components/Home";
+import Header from "./components/Header";
+import Contact from "./components/Contact";
 
 function App() {
   const [images, setImages] = useState();
@@ -28,7 +33,15 @@ function App() {
 
   return (
     <div className="App">
-      <Photos images={images} />
+      <div>
+        <Router>
+          <Header></Header>
+          <Route path="/" exact component={Home} />
+          <Route path="/work/#section" component={Home} />
+          <Route path="/photos/" component={() => <Photos images={images} />} />
+          <Route path="/contact/" component={Contact} />
+        </Router>
+      </div>
     </div>
   );
 }
