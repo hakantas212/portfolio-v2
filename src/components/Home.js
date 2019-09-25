@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -36,11 +37,34 @@ const Home = () => (
       </Project>
       <Project>
         <Link>
-          <button>DEMO</button>
+          <a
+            href="https://codesandbox.io/s/personal-unsplash-api-fetch-2j6q4"
+            target="_blank"
+          >
+            <button>DEMO</button>
+          </a>
         </Link>
       </Project>
-      <Project>PROJECT 3</Project>
-      <Project>PROJECT 4</Project>
+      <Project>
+        <Link>
+          <a
+            href="https://codesandbox.io/s/very-old-css-only-animation-4jdbq"
+            target="_blank"
+          >
+            <button>DEMO</button>
+          </a>
+        </Link>
+      </Project>
+      <Project>
+        <Link>
+          <a
+            href="https://codesandbox.io/s/material-ui-todo-list-vanilla-js-295vp"
+            target="_blank"
+          >
+            <button>DEMO</button>
+          </a>
+        </Link>
+      </Project>
     </Section>
   </div>
 );
