@@ -30,14 +30,15 @@ const Home = () => (
 
     <Section id="projects">
       <Project>
-        <Link
-          to="https://codesandbox.io/s/search-country-rkpee"
-          target="_blank"
-        >
+        <a href="https://codesandbox.io/s/search-country-rkpee" target="_blank">
+          <button>DEMO</button>
+        </a>
+      </Project>
+      <Project>
+        <Link>
           <button>DEMO</button>
         </Link>
       </Project>
-      <Project>PROJECT 2</Project>
       <Project>PROJECT 3</Project>
       <Project>PROJECT 4</Project>
     </Section>
