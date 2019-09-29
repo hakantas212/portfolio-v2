@@ -20,7 +20,8 @@ const NavBar = styled.header`
 const Nav = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
+  margin-left: 0;
+  padding-inline-start: 0px;
 
   a {
     color: #000;
@@ -36,6 +37,24 @@ const Nav = styled.ul`
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
+  }
+
+  @media (max-width: 46rem) {
+    a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9em;
+      padding: 6px;
+    }
+
+    li {
+      padding: 4px;
+    }
+
+    ul {
+      padding-inline-start: 0px;
+    }
   }
 `;
 
