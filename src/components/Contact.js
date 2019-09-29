@@ -9,7 +9,7 @@ const Parag = styled.p`
 
 const Wrapper = styled.div`
   width: 100%;
-  max-width: 70%;
+  max-width: 80%;
   min-height: 100%;
   flex-grow: 1;
   margin: 0px auto;
@@ -66,6 +66,10 @@ const AboutMe = styled.div`
 
   span {
     font-weight: 700;
+  }
+
+  @media (max-width: 46rem) {
+    width: 100%;
   }
 `;
 
