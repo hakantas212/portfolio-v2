@@ -32,11 +32,6 @@ const Section = styled.section`
     grid-template-columns: repeat(auto-fit, minmax(1fr, auto-fot));
     grid-gap: 3em;
     height: 100%;
-
-
-    
-
- 
 `;
 const Project = styled.div`
   position:relative
