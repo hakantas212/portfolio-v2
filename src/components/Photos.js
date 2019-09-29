@@ -10,7 +10,7 @@ const Photos = ({ images }) => {
     position: fixed;
     overflow: scroll;
     object-fit: contain;
-    width: 100%;
+    width: 90%;
     height: 100%;
   `;
 

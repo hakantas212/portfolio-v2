@@ -1,3 +1,8 @@
-.App-link {
-  color: #61dafb;
+.App {
+  width: 90%;
+  min-width: 90%;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }

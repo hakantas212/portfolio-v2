@@ -1,47 +1,77 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { ReactComponent as Logo } from "./logo.svg";
 
-const Nav = styled.ul`
-  display: flex;
-  list-style: none;
-
-  a {
-    color: #333333;
+const NavBar = styled.header`
+  & > a {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.4em;
-    padding: 1em 1em;
+  }
+  width: 100%;
+  display: flex;
+  margin-bottom: 2em;
+`;
+
+const Nav = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4em;
+    padding: 0.5em 0.5em;
+  }
+
+  a:hover {
+    background-color: #93def7;
+    box-shadow: 0px 0px 7px 0px rgba(133, 133, 133, 0.3);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
   }
 `;
 
 const LiItems = styled.li`
-  &:nth-child(1) {
-    margin-right: auto;
-  }
+  padding: 10px;
+  color: white;
+  position: relative;
+  list-style-type: none;
+`;
 
-  &:nth-child(3) {
-    padding-right: 0;
-    margin: 0;
-  }
+const LogoLogo = styled.div`
+  width: 40px;
+  height: 40px;
 `;
 
 const Header = () => {
   return (
-    <Nav>
-      <LiItems>
-        <Link to="/">Home</Link>
-      </LiItems>
-      <LiItems>
-        <Link to="/#projects">Work</Link>
-      </LiItems>
-      <LiItems>
-        <Link to="/photos/">Photography</Link>
-      </LiItems>
-      <LiItems>
-        <Link to="/contact/">Contact</Link>
-      </LiItems>
-    </Nav>
+    <NavBar>
+      <Link to="/">
+        {" "}
+        <LogoLogo>
+          <Logo />
+        </LogoLogo>
+      </Link>
+      <Nav>
+        <LiItems>
+          <Link to="/#projects">Work</Link>
+        </LiItems>
+        <LiItems>
+          <Link to="/photos/">Photography</Link>
+        </LiItems>
+        <LiItems>
+          <Link to="/contact/">Contact</Link>
+        </LiItems>
+      </Nav>
+    </NavBar>
   );
 };
 
