@@ -12,6 +12,7 @@ const Photos = ({ images }) => {
     object-fit: contain;
     width: 90%;
     height: 100%;
+    z-index: 9999;
   `;
 
   return (

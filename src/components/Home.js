@@ -4,10 +4,11 @@ import React from "react";
 import styled from "styled-components";
 
 const Herotext = styled.h1`
-  font-size: 2.6em;
+  font-size: 2.4em;
   color: #212121;
-  font-weight: 700;
-  margin-top: 0;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 0px;
 `;
 const Wrapper = styled.div`
   width: 100%;
@@ -15,9 +16,15 @@ const Wrapper = styled.div`
   flex-grow: 1;
 
   .home-text {
-    font-weight: 600;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
-    font-size: 2.2em;
+    font-size: 2em;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.67em;
+  }
+
+  h2 {
+    margin-top: 50px;
   }
 `;
 
@@ -32,14 +39,18 @@ const Section = styled.section`
     grid-template-columns: repeat(auto-fit, minmax(1fr, auto-fot));
     grid-gap: 3em;
     height: 100%;
+  }
+  span {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
 `;
 const Project = styled.div`
   position:relative
   width: 100%;
   height: 275px;
-  text-align: center;
   border-radius: 0.2rem;
-  
+  border-top: 3em;
 
   img {
     width: 100%;
@@ -47,6 +58,8 @@ const Project = styled.div`
     height: 100%;
     object-fit: cover;
   }
+  
+
 `;
 
 const Overlay = styled.div`
@@ -58,7 +71,7 @@ const Overlay = styled.div`
   height: 100%;
   width: 100%;
   opacity: 0;
-  background-color: #000;
+  background-color: #92def7;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
@@ -72,10 +85,12 @@ const Overlay = styled.div`
   }
 
   h1 {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    opacitiy: 1;
+    vertical-align: middle;
+    text-align: center;
+    color: #212121;
+    margin: 4em 1em;
+    font-weight: 500;
+    font-size: 1.4em;
   }
 `;
 const Home = () => {
@@ -83,7 +98,7 @@ const Home = () => {
     <Wrapper>
       <Herotext>
         Hello.
-        <span role="img" class="wave">
+        <span role="img" className="wave">
           👋
         </span>
       </Herotext>
@@ -91,7 +106,7 @@ const Home = () => {
       <h1 className="home-text">
         I'm Hakan, front end developer and UI designer.
       </h1>
-
+      <h2>Projects</h2>
       <Section id="projects">
         <Project>
           <a
@@ -103,7 +118,7 @@ const Home = () => {
               <h1>Restcountries API + Exchangerates API </h1>
             </Overlay>
           </a>
-          <span>zdfdsfdsfdsfds</span>
+          <span>ReactJS, REST API, Material-UI</span>
         </Project>
         <Project>
           <a
@@ -115,7 +130,7 @@ const Home = () => {
               <h1>My personal Unsplash API with CSS grid</h1>
             </Overlay>
           </a>
-          <span>zdfdsfdsfdsfds</span>
+          <span>ReactJS, REST API, CSS Grid</span>
         </Project>
         <Project>
           <a
@@ -124,10 +139,10 @@ const Home = () => {
           >
             <img src={"/img/mini.png"} alt="" />
             <Overlay>
-              <h1>CSS only banner animation CSS only banner animation</h1>
+              <h1>CSS only banner animation </h1>
             </Overlay>
           </a>
-          <span>zdfdsfdsfdsfds</span>
+          <span>HTML, CSS</span>
         </Project>
         <Project>
           <a
@@ -136,10 +151,10 @@ const Home = () => {
           >
             <img src={"/img/todo-app.png"} alt="" />
             <Overlay>
-              <h1>A Simple vanilla JS todo list with Material Design</h1>
+              <h1>A Simple vanilla JavaScript todo app with Material Design</h1>
             </Overlay>
           </a>
-          <span>zdfdsfdsfdsfds</span>
+          <span>JavaScript, Material Design</span>
         </Project>
       </Section>
     </Wrapper>

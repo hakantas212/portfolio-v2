@@ -22,18 +22,20 @@ const Nav = styled.ul`
   flex-wrap: wrap;
   margin-left: 0;
   padding-inline-start: 0px;
+  li:nth-child(3) {
+    padding-right: 0px;
+  }
 
   a {
     color: #000;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 1.4em;
+    font-weight: 600;
+    font-size: 1.5em;
     padding: 0.5em 0.5em;
   }
 
   a:hover {
     background-color: #93def7;
-    box-shadow: 0px 0px 7px 0px rgba(133, 133, 133, 0.3);
     -webkit-transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
@@ -46,6 +48,10 @@ const Nav = styled.ul`
       font-weight: 500;
       font-size: 0.9em;
       padding: 6px;
+    }
+
+    a:focus {
+      background-color: #93def7;
     }
 
     li {
@@ -87,7 +93,7 @@ const Header = () => {
           <Link to="/photos/">Photography</Link>
         </LiItems>
         <LiItems>
-          <Link to="/contact/">Contact</Link>
+          <Link to="/contact/">About</Link>
         </LiItems>
       </Nav>
     </NavBar>
