@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import ReactGA from "react-ga";
 import "./App.css";
 import "./index.css";
 import axios from "axios";
@@ -8,6 +9,9 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+
+ReactGA.initialize("UA-148976686-1");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   const [images, setImages] = useState();
