@@ -110,7 +110,7 @@ const Home = () => {
       <Section id="projects">
         <Project>
           <a
-            href="https://codesandbox.io/s/search-country-rkpee"
+            href="https://codesandbox.io/s/search-country-6uwn2"
             target="_blank"
           >
             <img src={"/img/search-country.png"} alt="" />
