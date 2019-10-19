@@ -6,11 +6,11 @@ section {
   grid-gap: 10px;
 }
 section li:nth-child(1) {
-  grid-column: span 1;
+  grid-column: span 2;
   grid-row: span 1;
 }
 section li:nth-child(2) {
-  grid-column: span 2;
+  grid-column: span 1;
   grid-row: span 1;
 }
 section li:nth-child(3) {
@@ -18,19 +18,19 @@ section li:nth-child(3) {
   grid-row: span 1;
 }
 section li:nth-child(4) {
-  grid-column: span 2;
+  grid-column: span 1;
   grid-row: span 1;
 }
 section li:nth-child(5) {
-  grid-column: span 2;
+  grid-column: span 1;
   grid-row: span 1;
 }
 section li:nth-child(6) {
   grid-column: span 2;
-  grid-row: span 2;
+  grid-row: span 1;
 }
 section li:nth-child(7) {
-  grid-column: span 3;
+  grid-column: span 1;
   grid-row: span 1;
 }
 section li:nth-child(8) {
@@ -39,10 +39,10 @@ section li:nth-child(8) {
 }
 section li:nth-child(9) {
   grid-column: span 2;
-  grid-row: span 2;
+  grid-row: span 1;
 }
 section li:nth-child(10) {
-  grid-column: span 2;
+  grid-column: span 1;
   grid-row: span 2;
 }
 section li:nth-child(11) {
@@ -50,11 +50,35 @@ section li:nth-child(11) {
   grid-row: span 1;
 }
 section li:nth-child(12) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+section li:nth-child(13) {
   grid-column: span 3;
   grid-row: span 1;
 }
-section li:nth-child(22) {
+section li:nth-child(14) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+section li:nth-child(15) {
   grid-column: span 2;
+  grid-row: span 1;
+}
+section li:nth-child(16) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+section li:nth-child(17) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+section li:nth-child(16) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+section li:nth-child(23) {
+  grid-column: span 4;
   grid-row: span 1;
 }
 .grid__item {
