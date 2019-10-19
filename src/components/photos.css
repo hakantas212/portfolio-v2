@@ -77,8 +77,20 @@ section li:nth-child(16) {
   grid-column: span 1;
   grid-row: span 2;
 }
+section li:nth-child(19) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+section li:nth-child(20) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+section li:nth-child(21) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
 section li:nth-child(23) {
-  grid-column: span 4;
+  grid-column: span 2;
   grid-row: span 1;
 }
 .grid__item {
