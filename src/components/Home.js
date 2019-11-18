@@ -46,7 +46,7 @@ const Section = styled.section`
   }
 `;
 const Project = styled.div`
-  position:relative
+  position: relative;
   width: 100%;
   height: 275px;
   border-radius: 0.2rem;
@@ -58,8 +58,6 @@ const Project = styled.div`
     height: 100%;
     object-fit: cover;
   }
-  
-
 `;
 
 const Overlay = styled.div`
@@ -88,9 +86,33 @@ const Overlay = styled.div`
     vertical-align: middle;
     text-align: center;
     color: #212121;
-    margin: 4em 1em;
+    margin: 2em 1em;
     font-weight: 500;
     font-size: 1.4em;
+  }
+
+  .project-buttons {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  button {
+    font-size: 0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: transparent;
+    text-transform: none;
+    color: rgb(255, 255, 255);
+    font-family: Poppins, sans, sans-serif;
+    font-weight: 700;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    margin: 0.1rem 0.2rem;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    outline: none;
   }
 `;
 const Home = () => {
@@ -109,15 +131,40 @@ const Home = () => {
       <h2>Projects</h2>
       <Section id="projects">
         <Project>
-          <a
-            href="https://codesandbox.io/s/search-country-6uwn2"
-            target="_blank"
-          >
-            <img src={"/img/search-country.png"} alt="" />
-            <Overlay>
-              <h1>Restcountries API + Exchangerates API </h1>
-            </Overlay>
-          </a>
+          <img src={"/img/ecommerce.png"} alt="" />
+          <Overlay>
+            <h1>A simple online shopping project </h1>
+            <div className="project-buttons">
+              <a href="https://react-ecommerce.hakantas.se/" target="_blank">
+                <button>Demo</button>
+              </a>
+              <a
+                href="https://github.com/hakantas212/react-ecommerce-project"
+                target="_blank"
+              >
+                <button>Github</button>
+              </a>
+            </div>
+          </Overlay>
+
+          <span>ReactJS, Bootsrap, styled-components</span>
+        </Project>
+        <Project>
+          <img src={"/img/search-country.png"} alt="" />
+          <Overlay>
+            <h1>Restcountries API + Exchangerates API </h1>
+            <div className="project-buttons">
+              <a href="https://country-search.hakantas.se/" target="_blank">
+                <button>Demo</button>
+              </a>
+              <a
+                href="https://github.com/hakantas212/search-country"
+                target="_blank"
+              >
+                <button>Github</button>
+              </a>
+            </div>
+          </Overlay>
           <span>ReactJS, REST API, Material-UI</span>
         </Project>
         <Project>
@@ -145,15 +192,21 @@ const Home = () => {
           <span>HTML, CSS</span>
         </Project>
         <Project>
-          <a
-            href="https://codesandbox.io/s/material-ui-todo-list-vanilla-js-295vp"
-            target="_blank"
-          >
-            <img src={"/img/todo-app.png"} alt="" />
-            <Overlay>
-              <h1>A Simple vanilla JavaScript todo app with Material Design</h1>
-            </Overlay>
-          </a>
+          <img src={"/img/todo-app.png"} alt="" />
+          <Overlay>
+            <h1>A Simple vanilla JavaScript todo app with Material Design</h1>
+            <div className="project-buttons">
+              <a href="https://todo-list.hakantas.se/" target="_blank">
+                <button>Demo</button>
+              </a>
+              <a
+                href="https://github.com/hakantas212/Vanilla-JS-todo-list"
+                target="_blank"
+              >
+                <button>Github</button>
+              </a>
+            </div>
+          </Overlay>
           <span>JavaScript, Material Design</span>
         </Project>
       </Section>
