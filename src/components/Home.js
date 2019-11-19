@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Herotext = styled.h1`
   font-size: 2.4em;
@@ -154,7 +155,10 @@ const Home = () => {
           <Overlay>
             <h1>Restcountries API + Exchangerates API </h1>
             <div className="project-buttons">
-              <a href="https://country-search.hakantas.se/" target="_blank">
+              <a
+                href="https://codesandbox.io/s/search-country-6uwn2"
+                target="_blank"
+              >
                 <button>Demo</button>
               </a>
               <a
@@ -168,27 +172,36 @@ const Home = () => {
           <span>ReactJS, REST API, Material-UI</span>
         </Project>
         <Project>
-          <a
-            href="https://codesandbox.io/s/personal-unsplash-api-fetch-2j6q4"
-            target="_blank"
-          >
-            <img src={"/img/unsplash-logo.png"} alt="" />
-            <Overlay>
-              <h1>My personal Unsplash API with CSS grid</h1>
-            </Overlay>
-          </a>
+          <img src={"/img/unsplash-logo.png"} alt="" />
+          <Overlay>
+            <h1>My personal Unsplash API with CSS grid</h1>
+            <div className="project-buttons">
+              <Link to="/photos/" target="_blank">
+                <button>Demo</button>
+              </Link>
+              <a
+                href="https://github.com/hakantas212/unsplash-api-fetch"
+                target="_blank"
+              >
+                <button>Github</button>
+              </a>
+            </div>
+          </Overlay>
           <span>ReactJS, REST API, CSS Grid</span>
         </Project>
         <Project>
-          <a
-            href="https://codesandbox.io/s/very-old-css-only-animation-4jdbq"
-            target="_blank"
-          >
-            <img src={"/img/mini.png"} alt="" />
-            <Overlay>
-              <h1>CSS only banner animation </h1>
-            </Overlay>
-          </a>
+          <img src={"/img/mini.png"} alt="" />
+          <Overlay>
+            <h1>CSS only banner animation </h1>
+            <div className="project-buttons">
+              <a
+                href="https://codesandbox.io/s/very-old-css-only-animation-4jdbq"
+                target="_blank"
+              >
+                <button>Demo</button>
+              </a>
+            </div>
+          </Overlay>
           <span>HTML, CSS</span>
         </Project>
         <Project>
