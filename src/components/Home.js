@@ -176,7 +176,7 @@ const Home = () => {
           <Overlay>
             <h1>My personal Unsplash API with CSS grid</h1>
             <div className="project-buttons">
-              <Link to="/photos/" target="_blank">
+              <Link to="/photos/">
                 <button>Demo</button>
               </Link>
               <a
