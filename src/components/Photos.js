@@ -23,7 +23,7 @@ const Photos = ({ images }) => {
             <img
               onClick={() => {
                 setHovered(true);
-                setImage(img.urls.raw);
+                setImage(img.urls.regular);
               }}
               className="grid__item"
               alt={img.alt_description}
