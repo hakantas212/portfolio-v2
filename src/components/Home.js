@@ -148,7 +148,7 @@ const Home = () => {
             </div>
           </Overlay>
 
-          <span>ReactJS, styled-components</span>
+          <span>ReactJS, Bootstrap styled-components</span>
         </Project>
         <Project>
           <img src={"/img/react-todo.png"} alt="" />
@@ -166,7 +166,7 @@ const Home = () => {
               </a>
             </div>
           </Overlay>
-          <span>JavaScript, Material Design</span>
+          <span>JavaScript, styled-components</span>
         </Project>
         <Project>
           <img src={"/img/search-country.png"} alt="" />
