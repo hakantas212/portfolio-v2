@@ -148,7 +148,25 @@ const Home = () => {
             </div>
           </Overlay>
 
-          <span>ReactJS, Bootsrap, styled-components</span>
+          <span>ReactJS, styled-components</span>
+        </Project>
+        <Project>
+          <img src={"/img/react-todo.png"} alt="" />
+          <Overlay>
+            <h1>React to do list app</h1>
+            <div className="project-buttons">
+              <a href="https://react-todo-list.hakantas.se/" target="_blank">
+                <button>Demo</button>
+              </a>
+              <a
+                href="https://github.com/hakantas212/react-todo-list"
+                target="_blank"
+              >
+                <button>Github</button>
+              </a>
+            </div>
+          </Overlay>
+          <span>JavaScript, Material Design</span>
         </Project>
         <Project>
           <img src={"/img/search-country.png"} alt="" />
